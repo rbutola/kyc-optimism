@@ -456,6 +456,7 @@ func (m *SimpleTxManager) publishTx(ctx context.Context, tx *types.Transaction, 
 	l := m.txLogger(tx, true)
 
 	l.Info("Publishing transaction")
+	fmt.Println("DISCO KING 66 Hi Probably this is my contract call", tx.Hash,  sendState)
 
 	for {
 		// if the tx manager closed, give up without bumping fees or retrying
